@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "fontai";
+    src: 
+        url("../fonts/sf_shai_fontai-webfont.woff2") format("woff2"),
+        url("../fonts/sf_shai_fontai-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;    
+
+}
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "fontai";
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/*My Css*/
+
+
+.container{
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+.left{
+    position: relative;
+    max-width: 45%;
+    height: 100vh;
+}
+
+.left-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.logo-container{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.logo{
+    max-width: 70%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+a:hover{
+    color: #E41A22;
+}
+
+.mention{
+    position: absolute;
+    top: 95%;
+    left: 45%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    text-align: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
