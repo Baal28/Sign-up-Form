@@ -29,9 +29,9 @@
 
         <div class="right">
             <h1 class="title">Travel to Japan!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ratione non magnam at cum nihil a itaque blanditiis earum laborum. Asperiores dicta accusantium exercitationem sapiente facilis? Tempora et optio maiores.</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ratione non magnam at cum nihil a itaque blanditiis earum laborum. Asperiores dicta accusantium exercitationem sapiente facilis? Tempora et optio maiores.</p>
             <fieldset>
-                <legend>Register and visit japan!</legend>
+                <legend><h2>Register and visit japan!</h2></legend>
             </fieldset>
             <form action="/" method="post" class="jp-form">
                 <div class="l-form">
@@ -42,12 +42,12 @@
 
                     <div class="form-row">
                         <label for="mail">Email</label>
-                        <input type="email" name="email" id="mail">
+                        <input type="email" name="email" id="mail" placeholder="johndoe@..." required>
                     </div>
 
                     <div class="form-row">
                         <label for="pwd">Password</label>
-                        <input type="password" name="password" id="pwd">
+                        <input type="password" name="password" id="pwd" minlength="6" maxlength="10" required>
                     </div>
 
                     <div class="form-row">
@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="form-row">
-                        <p>Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a></p>
+                        <p>Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer" class="login">Log in</a></p>
                     </div>
                 </div>
 
@@ -67,12 +67,12 @@
 
                     <div class="form-row">
                         <label for="tlf">Phone Number</label>
-                        <input type="tel" name="tlf" id="tlf">
+                        <input type="tel" name="tlf" id="tlf" placeholder="+1-582...">
                     </div>
 
                     <div class="form-row">
                         <label for="c-pwd">Confirm Password</label>
-                        <input type="password" name="password-confirm" id="c-pwd">
+                        <input type="password" name="password-confirm" id="c-pwd" minlength="6" maxlength="10" required>
                     </div>
                 </div>
 
